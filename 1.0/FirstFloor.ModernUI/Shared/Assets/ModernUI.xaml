@@ -36,7 +36,7 @@
 
     <!-- font settings -->
     <FontFamily x:Key="DefaultFontFamily">Segoe UI</FontFamily>
-    <sys:Double x:Key="DefaultFontSize">13</sys:Double>
+    <sys:Double x:Key="DefaultFontSize">12</sys:Double>
 
     <FontFamily x:Key="FixedFontFamily">Consolas</FontFamily>
     <sys:Double x:Key="FixedFontSize">13.333</sys:Double>

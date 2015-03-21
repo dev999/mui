@@ -201,10 +201,10 @@
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Padding ="{TemplateBinding Padding}"
 >
-                            <Grid x:Name="containerGrid" Margin="5" >
+                            <Grid x:Name="containerGrid" Margin="3,0,3,0" >
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="1"/>
                                 </Grid.ColumnDefinitions>
                                 <ContentPresenter Grid.Column="0" 
                                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
@@ -213,7 +213,7 @@
                                 <Path x:Name="SortArrow"
                                       Grid.Column="1"
                                       HorizontalAlignment="Center" VerticalAlignment="Center"
-                                      Width="8" Height="6"  Margin="5,0,5,0"
+                                       Height="6"  Margin="5,0,5,0"
                                       Stretch="Fill" Opacity="0.5" Fill="{TemplateBinding Foreground}"
                                       RenderTransformOrigin="0.5,0.4"
                                       Visibility="Hidden"
