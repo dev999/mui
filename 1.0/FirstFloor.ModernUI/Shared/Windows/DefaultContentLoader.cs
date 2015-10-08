@@ -42,7 +42,14 @@ namespace FirstFloor.ModernUI.Windows
             if (ModernUIHelper.IsInDesignMode) {
                 return null;
             }
-            return Application.LoadComponent(uri);
+            var content =  Application.LoadComponent(uri);
+            ContentLoaded?.Invoke(this,content);
+            return content;
         }
+
+        /// <summary>
+        /// Informs subscribers that the content has loaded so additional processing can take place
+        /// </summary>
+        public event EventHandler<object> ContentLoaded;
     }
 }
